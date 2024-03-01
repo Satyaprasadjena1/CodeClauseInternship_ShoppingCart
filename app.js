@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     products.forEach(product => {
         const productElement = document.createElement('div');
         productElement.classList.add('product');
-        productElement.innerHTML = `<p>${product.name}</p><p>$${product.price.toFixed(2)}</p>`;
+        productElement.innerHTML = `<p>${product.name}</p><p> &#x20b9 ${product.price.toFixed(2)}</p>`;
         productElement.addEventListener('click', () => addToCart(product));
         productList.appendChild(productElement);
     });
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function addToCart(product) {
         const cartItem = document.createElement('li');
         cartItem.classList.add('cart-item');
-        cartItem.innerHTML = `<span>${product.name}</span><span>$${product.price.toFixed(2)}</span><button onclick="removeFromCart(${product.id})">Remove</button>`;
+        cartItem.innerHTML = `<span>${product.name}</span><span>&#x20b9;${product.price.toFixed(2)}</span><button onclick="removeFromCart(${product.id})">Remove</button>`;
         cartItems.appendChild(cartItem);
         total += product.price;
         totalPriceElement.textContent = total.toFixed(2);
