@@ -7,16 +7,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Sample product data (you can replace this with your product data)
     const products = [
-        { id: 1, name: 'Product 1', price: 10.99 },
-        { id: 2, name: 'Product 2', price: 19.99 },
-        { id: 3, name: 'Product 3', price: 5.99 },
+        { id: 1, name: 'Product 1', price: 200.99, img: 'img.jpg' },
+        { id: 2, name: 'Product 2', price: 199.99, img: 'img.jpg' },
+        { id: 3, name: 'Product 3', price: 300.99, img: 'img.jpg' },
+        { id: 4, name: 'Product 4', price: 299.99, img: 'img.jpg' },
+        { id: 5, name: 'Product 5', price: 399.99, img: 'img.jpg' },
+        { id: 6, name: 'Product 6', price: 499.99, img: 'img.jpg' },
+        { id: 7, name: 'Product 7', price: 599.99, img: 'img.jpg' },
+        { id: 8, name: 'Product 8', price: 699.99, img: 'img.jpg' },
+        { id: 8, name: 'Product 8', price: 699.99, img: 'img.jpg' },
+        { id: 8, name: 'Product 8', price: 699.99, img: 'img.jpg' },
+        { id: 8, name: 'Product 8', price: 699.99, img: 'img.jpg' },
+        { id: 8, name: 'Product 8', price: 699.99, img: 'img.jpg' },
+        { id: 8, name: 'Product 8', price: 699.99, img: 'img.jpg' },
+        { id: 8, name: 'Product 8', price: 699.99, img: 'img.jpg' },
     ];
 
     // Render product list
     products.forEach(product => {
         const productElement = document.createElement('div');
         productElement.classList.add('product');
-        productElement.innerHTML = `<p>${product.name}</p><p> &#x20b9 ${product.price.toFixed(2)}</p>`;
+        productElement.innerHTML = `<img src=${product.img}> <p>${product.name}</p><p> &#x20b9 ${product.price.toFixed(2)}</p>`;
         productElement.addEventListener('click', () => addToCart(product));
         productList.appendChild(productElement);
     });
