@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: aqua;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: blanchedalmond;
+}
+
+h1, h2 {
+    text-align: center;
+    color: deeppink;
+    
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: greenyellow;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: violet;
+}
+
+#shopping-cart {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    color: cadetblue;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    color: darkkhaki;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: mediumseagreen;
+}
+
+.cart-item button {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    color: springgreen;
+}
