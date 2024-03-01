@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const cartItem = document.createElement('li');
         cartItem.classList.add('cart-item');
         cartItem.setAttribute('data-product-id', product.id); // Add this line
-        cartItem.innerHTML = `<span>${product.name}</span><span>&#x20b9;${product.price.toFixed(2)}</span><button onclick="removeFromCart(${product.id})">Remove</button>`;
+        cartItem.innerHTML = `<span><img src=${product.img} style = "height: 80px; width: 60px"> ${product.name}</span><span>&#x20b9;${product.price.toFixed(2)}</span><button onclick="removeFromCart(${product.id})">Remove</button>`;
         cartItems.appendChild(cartItem);
         total += product.price;
         totalPriceElement.textContent = total.toFixed(2);
